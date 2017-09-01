@@ -1,0 +1,32 @@
+<template name="EditTable">
+    <h1>Edit table</h1>
+    <li>{{name}}</li>
+    <li>{{filename}}</li>
+    <li>{{Datetime}}</li>
+    <div style=" height: 150px; overflow:auto;background-color: #ffc">
+        {{Data}};
+    </div>
+    <br>
+    <div>
+        <form id="updateform">
+            <div class="form-group">
+                <label for="name">Update name: </label><br>
+                <input type="text" id="name" class="form-control" name="name of file" placeholder="Insert a document identifier.." value="{{name}}">
+            </div>
+            <div class="form-group">
+                <label for="file">Update json file: {{filename}} </label>
+                <input type="file" id="file"  name="filename" accept=".json">
+            </div>
+
+
+            <button type="submit" id="submit" class="btn btn-success">Update<span class="glyphicon glyphicon-share-alt"></span></button>
+        </form>
+    </div>
+    <br>
+    <button type="button" class="btn btn-primary btn-danger" id="delete"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</template>

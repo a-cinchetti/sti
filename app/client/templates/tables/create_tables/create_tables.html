@@ -1,0 +1,19 @@
+<template name="CreateTables">
+    <h1>Create table</h1>
+    <div>
+        <form id="form">
+            <div class="form-group">
+                <label for="name">Insert a name: </label><br>
+                <input type="text" id="name" class="form-control" name="name of file" placeholder="Insert a document identifier..">
+            </div>
+            <div class="form-group">
+                <label for="file">Insert a json file: </label>
+                <input type="file" id="file"  name="filename" accept=".json">
+            </div>
+
+
+            <button type="submit" id="submit" class="btn btn-success">Submit <span class="glyphicon glyphicon-share-alt"></span></button>
+        </form>
+    </div>
+
+</template>
